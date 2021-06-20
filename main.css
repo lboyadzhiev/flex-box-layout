@@ -1,0 +1,72 @@
+:root {
+    --mb: 10px;
+    --main-color: red;
+    --pding: 10px;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0;
+}
+
+body {
+    color: white;
+    font-weight: bold;
+}
+
+.container {
+    height: 100vh;
+    max-width: 85vw;
+    margin: 10px auto;
+}
+.header {
+    background-color: var(--main-color);
+    height: 7%;
+    margin-bottom: var(--mb);
+    padding: var(--pding);
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--mb);
+    height: 85%;
+}
+
+.main-part {
+    display: flex;
+    height: 85vh;
+    width: 70%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.small-box {
+    display: flex;
+    justify-content: space-between;
+    height: 15%;
+}
+.small-box > div {
+    background-color: var(--main-color);
+    height: 100%;
+    flex-basis: 32%;
+    padding: var(--pding);
+}
+.main {
+    background-color: var(--main-color);
+    padding: var(--pding);
+    height: 84%;
+}
+
+.side {
+    background-color: var(--main-color);
+    width: 28%;
+    padding: var(--pding);
+}
+
+.footer {
+    height: 5%;
+    background-color: var(--main-color);
+    padding: var(--pding);
+}
